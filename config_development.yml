@@ -4,8 +4,8 @@ kafka:
   bootstrap.servers: "polite-jackal-12673-us1-kafka.upstash.io:9092"
   security.protocol: "SASL_SSL"
   sasl.mechanism: "SCRAM-SHA-256"
-  sasl.username: "cG9saXRlLWphY2thbC0xMjY3MyQNnZN8rQI5A8bKDdsXcpO99b3i1RfkADBfrPQ"
-  sasl.password: "NjA3OGFjYjYtYjhjZS00NDJlLTg5YjMtNWU2NTEyMDk1ZmRi"
+  sasl.username: "UPSTASH_USERNAME"
+  sasl.password: "UPSTASH_PASSWORD"
   #  ssl.ca.location: "/path/to/ca-cert"
   #  ssl.certificate.location: "/path/to/client-cert"
   #  ssl.key.location: "/path/to/client-key"
@@ -20,6 +20,6 @@ kafka:
     enable.auto.commit: True        # Enable automatic offset commit
 
 mongo:
-  uri: "mongodb://admin:Mongo3988@localhost:27017/"
+  uri: "mongodb://admin:MONGO_PASSWORD@localhost:27017/"
   db: "orderdb"
   collection: "orders"
